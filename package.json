@@ -1,0 +1,32 @@
+{
+  "name": "@delucis/filesize-cli",
+  "version": "0.0.1",
+  "description": "A command line interface for @delucis/filesize.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "filesize": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delucis/filesize-cli.git"
+  },
+  "keywords": [
+    "filesize",
+    "file",
+    "size",
+    "cli",
+    "node"
+  ],
+  "author": "Chris Swithinbank <swithinbank@gmail.com> (http://chrisswithinbank.net/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/delucis/filesize-cli/issues"
+  },
+  "homepage": "https://github.com/delucis/filesize-cli#readme",
+  "dependencies": {
+    "@delucis/filesize": "^1.0.0",
+    "meow": "^3.7.0"
+  }
+}
