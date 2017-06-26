@@ -32,21 +32,17 @@ Most [options that can be passed to `filesize`][19e57b62] can be passed via the 
 
   [19e57b62]: https://www.npmjs.com/package/filesize#optional-settings "filesize package documentation on npmjs.com"
 
-```
---base=<number>           Number base of file size, default is 2
--b, --bits                Enables bit sizes, default is false
--e, --exponent=<number>   Specifies the symbol via exponent,
-                          e.g. 2 is MB for base 2, default is -1
--f, --fullform            Enables full form of unit of measure,
-                          default is false
--h, --help                Display this help text
--o, --output=<array|exponent|object|string>
--r, --round=<number>      Decimal place, default is 2
---spacer=<string>         Character between the result and suffix,
-                          default is " "
---standard=<iec|jedec>    Standard unit of measure, can be iec or jedec,
-                          default is jedec; can be overruled by base
--u, --unix                Enables unix style human readable output,
-                          e.g ls -lh, default is false
--v, --version             Print filesize’s version number
-```
+
+option                      | effect
+:---------------------------|:---------------------------------------------------------------------------------------------------
+`--base=<number>`           | Number base of file size, default is `2`
+`-b`, `--bits`              | Enables bit sizes, default is `false`
+`-e`, `--exponent=<number>` | Specifies the symbol via exponent, e.g. `2` is `MB` for base 2, default is `-1`
+`-f`, `--fullform`          | Enables full form of unit of measure, default is `false`
+`-h`, `--help`              | Display detailed help text
+`-o`, `--output=<string>`   | Output of function (`array`, `exponent`, `object`, or `string`), default is `string`
+`-r`, `--round=<number>`    | Decimal place, default is `2`
+`--spacer=<string>`         | Character between the result and its suffix, default is `" "`
+`--standard=<string>`       | Standard unit of measure, can be `iec` or `jedec`, default is `jedec`; can be overruled by `--base`
+`-u`, `--unix`              | Enables unix style human readable output, e.g `ls -lh`, default is `false`
+`-v`, `--version`           | Print filesize’s version number
