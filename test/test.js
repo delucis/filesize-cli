@@ -1,6 +1,7 @@
 'use strict'
 
 const EXEC = require('child_process').exec
+const PACKAGE = require('../package.json')
 const CHAI = require('chai')
 CHAI.use(require('chai-match'))
 const EXPECT = CHAI.expect
@@ -68,6 +69,16 @@ describe('filesize-cli', function () {
   it('should raise ENOENT error if the passed file does not exist', function (done) {
     EXEC('./cli.js file-that-does-not-exist', function (e, stdout, stderr) {
       EXPECT(stderr).to.match(startswithENOENT)
+      done()
+    })
+  })
+
+  it('should show help if no options passed', function (done) {
+    EXEC('./cli.js', function (e, stdout, stderr) {
+      EXPECT(e).to.be.null
+      EXPECT(stderr).to.be.empty
+      EXPECT(stdout).to.be.a('string')
+      EXPECT(stdout).to.have.string(PACKAGE.description)
       done()
     })
   })
