@@ -1,6 +1,6 @@
 # @delucis/filesize-cli
 
-[![Build Status](https://travis-ci.org/delucis/filesize-cli.svg?branch=master)](https://travis-ci.org/delucis/filesize-cli)
+[![Build Status](https://travis-ci.org/delucis/filesize-cli.svg?branch=master)](https://travis-ci.org/delucis/filesize-cli) [![Coverage Status](https://coveralls.io/repos/github/delucis/filesize-cli/badge.svg?branch=master)](https://coveralls.io/github/delucis/filesize-cli?branch=master)
 
 A minimal utility to print human-friendly file sizes from the command line. Provides an interface for [`@delucis/filesize`][9c3b46d7], which in turn wraps [`filesize`][cae92b29].
 
