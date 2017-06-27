@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "A command line interface for @delucis/filesize.",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "nyc mocha --reporter spec",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "bin": {
     "filesize": "cli.js"
