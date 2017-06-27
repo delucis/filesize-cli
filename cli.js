@@ -42,8 +42,7 @@ const cli = meow(`
   })
 
 if (cli.input.length === 0) {
-  cli.showHelp()
-  process.exit(0)
+  cli.showHelp(0)
 }
 
 filesize(cli.input.shift(), cli.flags, function (e, size) {
