@@ -27,14 +27,14 @@
   },
   "homepage": "https://github.com/delucis/filesize-cli#readme",
   "dependencies": {
-    "@delucis/filesize": "^1.0.0",
+    "@delucis/filesize": "^1.0.2",
     "meow": "^3.7.0"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
+    "chai": "^4.2.0",
     "chai-match": "^1.1.1",
-    "coveralls": "^2.13.1",
-    "mocha": "^3.4.2",
-    "nyc": "^11.0.3"
+    "coveralls": "^3.0.4",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   }
 }
